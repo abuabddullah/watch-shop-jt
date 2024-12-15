@@ -76,7 +76,7 @@ Experience the project live:
    ```bash
    cd watch-shop-jt
    ```
-3. Navigate to the project directory:
+3. Navigate to required branch:
    ```bash
    git checkout watch-shop-react-version
    ```
