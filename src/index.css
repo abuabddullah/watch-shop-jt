@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Roboto", serif;
+  font-style: normal;
+}
+.color-btn.selected {
+  outline: 2px solid #6576ff;
+  outline-offset: 2px;
+}
+
+.size-btn.selected {
+  border-color: #6576ff;
+}
+.size-btn.selected span {
+  color: #6576ff;
+}
+
+#cartModal {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.text-dark-bold {
+  color: #364a63;
+}
+.text-black-bold {
+  color: #373737;
+}
+.text-light-gray {
+  color: #8091a7;
+}
+.text-purple {
+  color: #6576ff;
+}
+.bg-purple {
+  background: #6576ff;
+}
+.border-purple {
+  border-color: #6576ff;
+}
+
+.roboto-400 {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+}
+.roboto-700 {
+  font-family: "Roboto", serif;
+  font-weight: 700;
+}
+.text-18px {
+  font-size: 18px !important;
+}
