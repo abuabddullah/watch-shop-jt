@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Watch Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- font roboto -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+</head>
+
+<body class="bg-gray-100">
+    <div class="container mx-auto ">
+        <div class="flex flex-col md:flex-row items-center gap-14 my-[60px]">
+            <!-- Product Image -->
+            <div class="md:w-1/2">
+                <img id="mainImage" src="images/purple.jpg" alt="Smart Watch"
+                    class="w-full rounded-lg shadow-lg h-[720px]">
+            </div>
+
+            <!-- Product Details -->
+            <div class="md:w-1/2  md:max-h-max p-4 md:p-0">
+                <h1 class="text-[40px] font-bold mb-4 text-dark-bold roboto-700">Classy Modern Smart watch</h1>
+                <div class="flex items-center mb-4">
+                    <div class="flex text-[#FFD200] text-18px">★★★⯪☆</div>
+                    <span class="text-gray-600 ml-2 roboto-400 text-light-gray">(7 Reviews)</span>
+                </div>
+                <div class="mb-6">
+                    <span class="text-light-gray line-through text-[20px]">$99.00</span>
+                    <span class="text-purple ml-2 roboto-700 text-[24px]">$79.00</span>
+                </div>
+
+                <p
+                    class=" text-[18px] text-light-gray font-normal leading-[30px] text-left decoration-skip-ink-none underline-offset-from-font max-w-[626px]  mb-6">
+                    I must explain to you how all this mistaken idea of denoun cing ple praising pain was born and I
+                    will give you a complete account of the system, and expound the actual teaching.
+                </p>
+
+                <div class="mb-6">
+                    <div class="flex  text-light-gray text-[14px]">
+                        <p class="min-w-[46px] me-10">Type</p>
+                        <p>Model Number</p>
+                    </div>
+                    <div class="flex  text-dark-bold text-[16px] roboto-700">
+                        <p class="min-w-[46px] me-10">Watch</p>
+                        <p>Forerunner 290XT</p>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <h2 class="text-[18px] roboto-700 text-dark-bold mb-2">Band Color</h2>
+                    <div class="flex gap-2">
+                        <button class="color-btn w-[16px] h-[16px] rounded-full bg-purple-500"
+                            data-color="purple"></button>
+                        <button class="color-btn w-[16px] h-[16px] rounded-full bg-cyan-500" data-color="cyan"></button>
+                        <button class="color-btn w-[16px] h-[16px] rounded-full bg-blue-500" data-color="blue"></button>
+                        <button class="color-btn w-[16px] h-[16px] rounded-full bg-black" data-color="black"></button>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <h2 class="text-[18px] roboto-700 text-dark-bold mb-2">Wrist Size</h2>
+                    <div class="flex gap-2">
+                        <button
+                            class="size-btn selected min-w-[73px] h-[36px] px-[18px] py-[8px] border rounded-[3px] text-[13px] text-light-gray"
+                            data-size="S" data-price="59"><span class="roboto-700 text-purple text-[14px] me-1">S</span>
+                            $59</button>
+                        <button
+                            class="size-btn min-w-[73px] h-[36px] px-[18px] py-[8px] border rounded-[3px] text-[13px] text-light-gray"
+                            data-size="M" data-price="79"><span
+                                class="roboto-700 text-dark-bold text-[14px] me-1">M</span>
+                            $79</button>
+                        <button
+                            class="size-btn min-w-[73px] h-[36px] px-[18px] py-[8px] border rounded-[3px] text-[13px] text-light-gray"
+                            data-size="L" data-price="89"><span
+                                class="roboto-700 text-dark-bold text-[14px] me-1">L</span>
+                            $89</button>
+                        <button
+                            class="size-btn min-w-[73px] h-[36px] px-[18px] py-[8px] border rounded-[3px] text-[13px] text-light-gray"
+                            data-size="XL" data-price="99"><span
+                                class="roboto-700 text-dark-bold text-[14px] me-1">XL</span>
+                            $99</button>
+                    </div>
+                </div>
+
+                <div class="mb-6">
+                    <h2 class="text-[18px] roboto-700 text-dark-bold mb-2">Quantity</h2>
+                    <div class="flex gap-[10px] items-center">
+                        <div class="flex items-center text-light-gray">
+                            <button id="decreaseQty" class="py-[8px] px-[18px]  rounded-s-[3px] border ">-</button>
+                            <input type="number" id="quantity" value="1" min="1"
+                                class="w-16 text-center border  py-[8px] px-[18px]  appearance-none [&::-webkit-inner-spin-button]:hidden [&::-webkit-outer-spin-button]:hidden bg-transparent">
+                            <button id="increaseQty" class="py-[8px] px-[18px]   rounded-e-[3px]  border ">+</button>
+                        </div>
+
+
+                        <button id="addToCart"
+                            class="bg-purple text-white h-[36px] w-[105px] rounded-[3px] py-[8px] px-[18px] text-[13px] roboto-700">
+                            Add to Cart
+                        </button>
+                        <button type="button"><span class="text-[30px] text-purple inline-block">♡</span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Floating Checkout Button -->
+        <div id="floatingCheckout" class="hidden flex  justify-center pb-[20px]">
+            <button
+                class="bg-[#FFBB5A] text-white w-[139px] h-[42px] text-[14px] px-6 py-3 rounded-full shadow-lg gap-2 flex">
+                <span class="text-dark-bold roboto-700">Checkout</span> <span id="cartCount"
+                    class="text-dark-bold roboto-700 text-[12px] bg-white py-[2px] px-[6px] inline-block rounded-[5px] h-[20px] w-[20px]">0</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cartModal" class="fixed inset-0 bg-black bg-opacity-50 hidden">
+        <div class="bg-white max-w-2xl mx-auto mt-20 p-[44px] rounded-[20px]">
+            <div class="flex justify-between items-center mb-4">
+                <h2 class="text-[22px] roboto-700 text-dark-bold">Your Cart</h2>
+                <button id="closeModal" class="text-gray-500 opacity-0">&times;</button>
+            </div>
+            <!-- table header -->
+            <div
+                class="grid grid-cols-8 grid-rows-1 gap-0 grid-flow-row border-b pb-[8px] text-light-gray text-[14px] text-center">
+                <div class="col-span-4 row-span-1 text-left"> Item
+                </div>
+                <div class="col-span-1 row-span-1"> Color
+                </div>
+                <div class="col-span-1 row-span-1"> Size
+                </div>
+                <div class="col-span-1 row-span-1"> Qnt
+                </div>
+                <div class="col-span-1 row-span-1"> Price
+                </div>
+            </div>
+            <!-- table body -->
+            <div id="cartItems" class="space-y-4"></div>
+
+            <!-- total row -->
+            <div class="grid grid-cols-8 grid-rows-1 gap-0 grid-flow-row items-center roboto-700 text-center my-6">
+                <div class="col-span-6 row-span-1 text-black-bold text-[16px] text-left"> Total
+                </div>
+                <div class="col-span-1 row-span-1 text-[14px] text-dark-bold" id="totalCartQty"> Qnt
+                </div>
+                <div class="col-span-1 row-span-1 text-[18px] text-dark-bold"> $<span id="cartTotal">0</span>
+                </div>
+            </div>
+
+            <div class=" flex justify-between items-center flex-row-reverse ">
+                <div class="space-x-4">
+                    <button id="continueShopping"
+                        class="px-[18px] py-[8px] h-[36px] w-[152px] text-[13px] roboto-700 text-dark-bold border rounded-[3px]">Continue
+                        Shopping</button>
+                    <button id="checkout"
+                        class="px-[18px] py-[8px] h-[36px] w-[94px] text-[13px] roboto-700 text-white bg-purple border rounded-[3px]">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
